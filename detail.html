@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Detail Projects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(86, 86, 180);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11, 11, 14);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none ;
+            margin: 0 24px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color: rgb(238, 238, 239);
+            font-size: 1.2rem;
+        }
+
+        nav > div{
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: white;
+        }
+
+        .first{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+            height: 52vh;
+        }
+
+        .first > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            font-size: 1.7rem;
+            line-height: 1.7;
+            font-weight: bold;
+        }
+
+        .img{
+            width: 300px;
+        }
+
+        main hr{
+            border: 0;
+            background: black;
+            height: 1.3px;
+            margin: 60px 84px;
+        }
+
+        .second{
+            max-width: 80vw;
+            margin: 120px 0;
+            height: 64vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .title{
+            font-size: 1.1rem;
+            margin-left: 120px;
+            margin-top: -70px;
+            white-space: nowrap;
+            
+        }
+
+        .leftsection1{
+            margin-left: -185px;
+            background-color: rgb(195, 195, 218);
+            height: 110px;
+            margin-right: 170px;
+            line-height: 1.5;
+            font-size: 16px;
+            border-radius: 8px;
+            color: black;
+        }
+
+        .leftsection1 .detail{
+            padding-left: 8px;
+        }
+
+        .key{
+            background-color: rgb(195, 195, 218);
+            margin-top: 30px;
+            border-radius: 8px;
+            padding-left: 8px;
+        }
+
+        .key ul li{
+            list-style: none;
+        }
+
+        .img{
+            width: 400px;
+            height: 250px;
+            margin-right: -120px;
+        }
+
+        .tech{
+            background-color: rgb(195, 195, 218);
+            margin-top: 18px;
+            border-radius: 8px;
+            padding-left: 8px;
+        }
+
+        .obj{
+            background-color: rgb(195, 195, 218);
+            margin-top: 20px;
+            border-radius: 8px;
+            padding-left: 8px;
+        }
+
+        .third{
+            max-width: 80vw;
+            margin: 120px 0;
+            height: 64vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .leftsection2{
+            margin-left: -550px;
+            background-color: rgb(195, 195, 218);
+            height: 100px;
+            margin-right: 170px;
+            line-height: 1.5;
+            font-size: 16px;
+            border-radius: 8px;
+            color: black;
+        }
+
+        .leftsection2 .detail{
+            padding-left: 8px;
+        }
+
+                footer{
+            background-color: rgb(17, 17, 23);
+            
+        }
+
+        .footer{
+            display: flex;
+            padding: 24px 120px;
+            justify-content: space-evenly;
+            white-space: nowrap;
+            line-height: 2.5;
+            text-align: center;
+            color: white;
+            
+        }
+
+        .footer > div{
+            width: 120px;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: white;
+            padding: 12px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ateeq Projects</div>
+            <div class="item">
+                <ul>
+                    <li><a href="#p1">Project-1</a></li>
+                    <li><a href="#p2">Project-2</a></li>
+                    <li><a href="#p3">Project-3</a></li>
+                    <li><a href="#p4">Project-4</a></li>
+                    <li><a href="#p5">Project-5</a></li>
+                    <li><a href="#p6">Project-6</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftsection">
+                Hi, I'm Ateeq — Data Analyst & Developer. A Collection of My Projects. Turning Data Into Meaningful Stories. Discover My Work & Journey.
+            </div>
+
+            <div class="rightsection">
+                <img class="img" src="project.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="second" id="p1">
+            <div class="title">
+                <h1>ROOM NEST</h1>
+            </div>
+
+            <div class="leftsection1">
+                <div class="detail">
+                    RoomNest is a web-based platform designed to help university students easily find and book hostels near their campuses. The system allows students to search for available hostels based on location, budget, and facilities. Hostel owners can also register their properties, upload details, and manage room availability through an admin dashboard.
+                </div>
+
+                <div class="key">
+                    <ul>
+                        <li>Students can search hostels by university name, price range, or amenities.</li>
+                        <li>Each listing includes detailed information such as address, rent, and contact details.</li>
+                        <li>Separate login systems for students and hostel owners.</li>
+                        <li>Students can reserve rooms or schedule visits directly through the website.</li>
+                        <li>Admin can manage users, hostels, and monitor system activities.</li>
+                    </ul>
+                </div>
+
+                <div class="tech">
+                    HTML, CSS, JavaScript, PHP, MySQL (Database), Bootstrap.
+                </div>
+
+                <div class="obj">
+                    To provide an easy-to-use digital solution for students to find affordable and comfortable hostels near their universities, saving time and effort compared to traditional searching methods.
+                </div>
+            </div>
+
+            <div class="rightsection1">
+                <img class="img" src="room.png" alt="">
+            </div>
+
+            </div>
+        </section>
+        <hr>
+
+        <section class="third" id="p2">
+            <div class="title">
+                <h1>Office Meeting Analysis Dashboard</h1>
+            </div>
+
+            <div class="leftsection2">
+                <div class="detail">
+                    The Office Meeting Analysis Dashboard is an interactive Power BI report designed to help organizations understand the effectiveness and productivity of their internal meetings. The dashboard provides a clear, data-driven view of how meetings are conducted, which topics receive the most attention, and how employees participate across different sessions.
+                </div>
+
+                <div class="key">
+                    <ul>
+                        <li>Meeting frequency and duration trends.</li>
+                        <li>Most discussed topics and their importance.</li>
+                        <li>Employee engagement levels during meetings.</li>
+                        <li>Action items and follow-up status.</li>
+                        <li>Attendance patterns across departments.</li>
+                    </ul>
+                </div>
+
+                <div class="tech">
+                    This project demonstrates my skills in data modeling, DAX formulas, business analysis, and Power BI visualization to turn raw meeting data into meaningful insights.
+                </div>
+
+                <div class="obj">
+                    With visually appealing charts and KPIs, the dashboard helps management make better decisions—such as reducing unnecessary meetings, improving topic planning, and increasing overall meeting effectiveness.
+                </div>
+            </div>
+
+            <div class="rightsection1">
+                <img class="img" src="dash1.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+
+        <section class="third" id="p3">
+            <div class="title">
+                <h1>Construction Work Ana Dashboard</h1>
+            </div>
+
+            <div class="leftsection2">
+                <div class="detail">
+                    The Construction Work Dashboard is a comprehensive Power BI report designed to monitor, track, and analyze ongoing construction projects in real time. It helps project managers, engineers, and stakeholders clearly understand project progress, resource utilization, budget status, and potential delays.
+                </div>
+
+                <div class="key">
+                    <ul>
+                        <li>Project progress tracking (completed vs. pending tasks).</li>
+                        <li>Budget vs. actual spending analysis.</li>
+                        <li>Labor performance and attendance.</li>
+                        <li>Daily, weekly, and monthly work updates.</li>
+                        <li>Site safety indicators and incident tracking.</li>
+                    </ul>
+                </div>
+
+                <div class="tech">
+                    This project highlights my capabilities in data visualization, DAX calculations, reporting analytics, and building real-time monitoring dashboards for project-based industries.
+                </div>
+
+                <div class="obj">
+                    With interactive visuals and dynamic filtering, the dashboard allows users to quickly identify issues, evaluate work performance, and forecast project timelines. It enhances decision-making by presenting construction data in a clear and actionable way.
+                </div>
+            </div>
+
+            <div class="rightsection1">
+                <img class="img" src="dash2.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="third" id="p4">
+            <div class="title">
+                <h1>Urban Market Sales  perf. Dashboard</h1>
+            </div>
+
+            <div class="leftsection2">
+                <div class="detail">
+                    The Urban Market Sales Dashboard is an interactive Power BI solution designed to analyze sales performance across rapidly growing urban markets. It helps businesses understand customer behavior, product demand, revenue trends, and store performance in different city zones.
+                </div>
+
+                <div class="key">
+                    <ul>
+                        <li>Total sales, revenue trends, and growth patterns.</li>
+                        <li>Customer segmentation based on age, gender, and location.</li>
+                        <li>Daily, weekly, and monthly sales comparisons.</li>
+                        <li>Top-selling products across urban regions.</li>
+                        <li>Profitability and discount impact analysis.</li>
+                    </ul>
+                </div>
+
+                <div class="tech">
+                    This project demonstrates my skills in data cleaning, modeling, DAX calculations, and building powerful analytical dashboards that support strategic decision-making.
+                </div>
+
+                <div class="obj">
+                    With intuitive visuals and dynamic filters, the dashboard allows businesses to quickly identify opportunities, optimize product offerings, and improve marketing strategies for urban consumers.
+                </div>
+            </div>
+
+            <div class="rightsection1">
+                <img class="img" src="dash3.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="third" id="p5">
+            <div class="title">
+                <h1>Employees Performance  Dashboard</h1>
+            </div>
+
+            <div class="leftsection2">
+                <div class="detail">
+                    The Employee Performance Dashboard is a dynamic Power BI report designed to evaluate, monitor, and improve employee performance across an organization. It provides HR teams and managers with real-time insights into workforce productivity, engagement, and achievement of key performance indicators (KPIs).
+                </div>
+
+                <div class="key">
+                    <ul>
+                        <li>Attendance and punctuality tracking.</li>
+                        <li>Task completion rates and deadlines met.</li>
+                        <li>Top performers and employees needing support.</li>
+                        <li>Department-wise performance comparisons.</li>
+                        <li>Monthly productivity trends.</li>
+                    </ul>
+                </div>
+
+                <div class="tech">
+                    This project highlights my expertise in data modeling, KPI design, DAX formulas, and building HR-focused analytical dashboards using Power BI.
+                </div>
+
+                <div class="obj">
+                    Through interactive charts, slicers, and KPIs, this dashboard helps organizations make informed decisions about promotions, rewards, training programs, and workload distribution. It also supports identifying performance gaps and improving overall efficiency.
+                </div>
+            </div>
+
+            <div class="rightsection1">
+                <img class="img" src="dash4.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="third" id="p6">
+            <div class="title">
+                <h1>Annual Sale Report Dashboard Excel</h1>
+            </div>
+
+            <div class="leftsection2">
+                <div class="detail">
+                    The Annual Sales Report Dashboard is an interactive Excel-based analytics solution designed to track and summarize a company’s yearly sales performance. Built using advanced Excel tools, the dashboard provides a clear view of revenue trends, product performance, customer insights, and overall business growth throughout the year.
+                </div>
+
+                <div class="key">
+                    <ul>
+                        <li>Total yearly sales and revenue growth.</li>
+                        <li>Month-by-month sales comparison.</li>
+                        <li>Top-performing products and categories.</li>
+                        <li>Regional sales distribution.</li>
+                        <li>Customer purchase patterns and frequency.</li>
+                    </ul>
+                </div>
+
+                <div class="tech">
+                    This project demonstrates my skills in Excel analytics, data cleaning, visualization, and building professional dashboards for business performance tracking.
+                </div>
+
+                <div class="obj">
+                    The dashboard uses Pivot Tables, Pivot Charts, slicers, conditional formatting, and formulas to make the report fully dynamic and easy to explore. Managers can filter data by month, region, or category to quickly identify trends and make informed business decisions.
+                </div>
+            </div>
+
+            <div class="rightsection1">
+                <img class="img" src="dash5.png" alt="">
+            </div>
+        </section>
+        <hr>
+    </main>
+
+        <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ateeq's Projects</h3>
+            </div>
+            <div class="footer-second">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#p1">Project-1</a></li>
+                    <li><a href="#p2">Project-2</a></li>
+                    <li><a href="#p3">Project-3</a></li>
+                    <li><a href="#p4">Project-4</a></li>
+                    <li><a href="#p5">Project-5</a></li>
+                    <li><a href="#p6">Project-6</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Social Media</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h3>Contact</h3>
+                <ul>
+                    <li>mateeqanjum422@gmail.com</li>
+                    <li>054 716 2039</li>
+                    <li>Jeddah</li>
+                    <li>mateeqanjum</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &#169; ateeqsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+</body>
+</html>

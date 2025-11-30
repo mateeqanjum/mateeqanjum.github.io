@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateeq Portfolio</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(2, 2, 28);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(159, 74, 239);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 24px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(10, 7, 7);
+        }
+
+        nav ul li a:hover{
+            color: rgb(238, 238, 239);
+            font-size: 1.2rem;
+        }
+        main hr{
+            border: 0;
+            background: rgb(159, 74, 239);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+        }
+
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstsection > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            font-size: 1.7rem;
+            line-height: 1.7;
+        }
+
+        .leftsection .btn{
+            padding: 12px;
+            background: rgb(159, 74, 239);
+            color: rgb(5, 3, 3);
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftsection .buttons{
+            padding: 50px 0;
+        }
+
+        .thirdsection .btn{
+            padding: 12px;
+            background: rgb(159, 74, 239);
+            color: black;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            
+        }
+
+        .thirdsection .buttons{
+            padding: 50px 0;
+            margin-top: 390px;
+            margin-left: -750px;
+        }
+
+        a button{
+            border: none;
+            outline: none;
+            text-decoration: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .purple{
+            color: rgb(159, 74, 239);
+        }
+
+        .text-grey{
+            color: rgb(159, 74, 239);
+            padding: 20px 0;
+            line-height: 3;
+        }
+
+        #element{
+            color: rgb(159, 74, 239);
+        }
+
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1{
+            font-size: 1.8rem;
+        }
+
+        .secondsection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical{
+            height: 102px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top{
+            width: 50px;
+            position: relative;
+            top: -60px;
+            left: -16px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            left: -32px;
+
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 90px;
+            width: 150px;
+            font-size: 12px;
+            left: -32px;
+        }
+
+        .thirdsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .thirdsection h1{
+            font-size: 1.8rem;
+        }
+
+        .thirdsection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+        }
+
+        .thirdsection .vertical{
+            height: 102px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .fourthsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .fourthsection .container{
+            display: flex;
+            gap: 20px;
+        }
+
+        .fourthsection .round1{
+            background-color: white;
+            width: 80px;
+            height: 50px;
+            border-radius: 40px;
+            display: flex;
+            padding: 10px;
+            margin-top: 140px;
+            margin-left: 150px;
+            position: relative;
+            
+        }
+
+        .map{
+            margin-left: 12px;
+        }
+
+        .fourthsection .round {
+            color: white;
+            font-size: 32px;
+        }
+
+        .title{
+            position: relative;
+            top: 90px;
+            left: -50px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .text{
+            position: relative;
+            top: 140px;
+            left: -120px;
+            text-align: center;
+            display: inline-block;
+            white-space: nowrap;
+            color: rgb(159, 74, 239);
+        }
+
+        footer{
+            background-color: rgb(17, 17, 23);
+            
+        }
+
+        .footer{
+            display: flex;
+            padding: 24px 120px;
+            justify-content: space-evenly;
+            white-space: nowrap;
+            line-height: 2.5;
+            text-align: center;
+            
+        }
+
+        .footer > div{
+            width: 120px;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ateeq's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="Home">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">M. Ateeq Anjum</span> 
+                <div>And i am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="Ateeq_CV.pdf" download="Ateeq_CV">
+                    <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/mateeqanjum" target="_blank">
+                    <button class="btn">Visit Github</button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection" id="About">
+            <span class="text-grey">What i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="frontend.png" alt="">
+                    <div class="vertical-title">
+                        Front-end development (2023-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Skilled in creating responsive and user-friendly websites using HTML, CSS, and JavaScript. Focused on building clean layouts, interactive designs, and seamless user experiences across all devices.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="database.png" alt="">
+                    <div class="vertical-title">
+                        Database Management (2023-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Experienced in designing, organizing, and maintaining databases to ensure data accuracy, security, and efficiency. Skilled in writing SQL queries, managing data storage, and optimizing database performance.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="excel.png" alt="">
+                    <div class="vertical-title">
+                        Excel <br> (2022-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in using Excel for data analysis, reporting, and visualization. Skilled in formulas, pivot tables, charts, and data cleaning to organize and interpret information effectively.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="Microsoft_Power_BI.png" alt="">
+                    <div class="vertical-title">
+                        Power BI Specialist <br> (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Skilled in creating interactive dashboards and data visualizations to support business decision-making. Experienced in data modeling, DAX calculations, and transforming raw data into clear and actionable insights.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="DataAnalyst.png" alt="">
+                    <div class="vertical-title">
+                        Data Analyst (2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in collecting, analyzing, and interpreting data to identify trends and support strategic decisions. Skilled in tools like Excel, Power BI, and SQL to transform raw data into meaningful insights and visual reports.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="BI.png" alt="">
+                    <div class="vertical-title">
+                        Business Intelligence (2024-2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Skilled in analyzing business data and creating dashboards to support strategic decisions. Experienced in transforming raw data into actionable insights using tools like Power BI and Excel.
+                    </div>
+                </div>
+            
+            </div>
+
+
+        </section>
+        <hr>
+
+        <section class="thirdsection" id="Projects">
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="room.png" alt="">
+                    <div class="vertical-title">
+                        Room Nest 
+                    </div>
+                    <div class="vertical-desc">
+                        RoomNest is a web-based platform designed to help university students easily find and book hostels near their campuses. The system allows students to search for available hostels based on location, budget, and facilities.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="port.png" alt="">
+                    <div class="vertical-title">
+                        Personal Portfolio Website
+                    </div>
+                    <div class="vertical-desc">
+                        A personal portfolio website created to showcase my skills, projects, and professional experience. The website serves as an online resume where visitors can learn about my background, view my work samples, and contact me for opportunities.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dash1.png" alt="">
+                    <div class="vertical-title">
+                        Office Meeting Analysis Dashboard
+                    </div>
+                    <div class="vertical-desc">
+                        The Office Meeting Analysis Dashboard is an interactive Power BI report designed to analyze and monitor the efficiency of office meetings. It provides insights into meeting frequency, duration, participant attendance, and key discussion outcomes.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dash2.png" alt="">
+                    <div class="vertical-title">
+                        Construction Work Dashboard
+                    </div>
+                    <div class="vertical-desc">
+                        The Construction Work Dashboard is a Power BI project designed to monitor and analyze the progress, cost, and performance of ongoing construction projects. It provides real-time insights into project timelines, budgets, resource allocation, and contractor performance, helping management make data-driven decisions.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dash3.png" alt="">
+                    <div class="vertical-title">
+                        Urban Market Sales Dashboard
+                    </div>
+                    <div class="vertical-desc">
+                        The Market Sales Dashboard is a Power BI solution developed to analyze and visualize sales performance across different products, regions, and time periods. It provides actionable insights that help businesses identify sales trends, top-performing products, and areas needing improvement.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="dash4.png" alt="">
+                    <div class="vertical-title">
+                        Employees Performance Dashboard
+                    </div>
+                    <div class="vertical-desc">
+                        The Employee Performance Dashboard is a Power BI project created to evaluate and monitor the performance of employees based on key metrics such as attendance, task completion, productivity, and overall efficiency. It provides HR and management with clear insights to recognize top performers and identify areas that need improvement.
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="detail.html" target="_blank">
+                        <button class="btn">
+                           View Detail Projects
+                        </button>
+                    </a>
+                </div>
+            
+            </div>
+        </section>
+        <hr>
+
+        <section class="fourthsection" id="Contact">
+            <span class="text-grey">Below are the details to reach me out</span>
+            <h1>Contact Me</h1>
+
+            <div class="container">
+                <div class="round1">
+                    <img class="map" src="map.png" alt="">
+                    <div class="title">
+                        Address
+                    </div>
+                    <div class="text">
+                        Jeddah
+                    </div>
+                </div>
+
+                <div class="round1">
+                    <img class="map" src="call.png" alt="">
+                    <div class="title">
+                        Phone 
+                    </div>
+                    <div class="text">
+                        054 716 2039
+                    </div>
+                </div>
+
+                <div class="round1">
+                    <img class="map" src="email.png" alt="">
+                    <div class="title">
+                        Email
+                    </div>
+                    <div class="text">
+                        mateeqanjum422@gmail.com
+                    </div>
+                </div>
+
+                <div class="round1">
+                    <img class="map" src="Fiver.png" alt="">
+                    <div class="title">
+                        Fiverr
+                    </div>
+                    <div class="text">
+                        @ateeq_anjum0
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </section>
+        <hr>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Ateeq's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Social Media</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h3>Contact</h3>
+                <ul>
+                    <li>mateeqanjum422@gmail.com</li>
+                    <li>054 716 2039</li>
+                    <li>Jeddah</li>
+                    <li>mateeqanjum</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &#169; ateeqsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Data Analyst' , 'Power BI Specialist' , 'Database Management'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
